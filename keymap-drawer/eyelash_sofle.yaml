@@ -312,12 +312,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - LEFT WIN
+  - M
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - layer1
+  - N
   - LEFT WIN
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -327,3 +327,5 @@ layers:
 combos:
 - p: [61, 62]
   k: {t: '4', h: toggle}
+- p: [56, 13]
+  k: M
