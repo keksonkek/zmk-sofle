@@ -57,7 +57,7 @@
 
         m_combo_forapex {
             bindings = <&kp M>;
-            key-positions = <56 13>;
+            key-positions = <13 57>;
         };
     };
 
