@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
@@ -198,9 +199,9 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+Ctl+Sft+3, s: Gui+Ctl+Sft+#}
+  - {t: Gui+Ctl+Sft+4, s: Gui+Ctl+Sft+$}
+  - {t: Gui+Ctl+Sft+5, s: Gui+Ctl+Sft+%}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
@@ -224,7 +225,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Alt+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
