@@ -3,8 +3,8 @@
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <behaviors.dtsi>
 #include <behaviors/runtime-sensor-rotate.dtsi>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -58,8 +58,8 @@
         compatible = "zmk,combos";
 
         softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
+            bindings = <&tog 0>;
+            key-positions = <62 61>;
         };
     };
 
@@ -85,11 +85,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9   &kp N0      &kp BACKSPACE
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O    &kp P       &kp BSLH
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &tog 3   &kp DELETE
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -124,28 +124,28 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC         &trans            &trans            &kp LG(LC(LS(N3)))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(N5)))    &kp UP_ARROW     &trans     &kp N7     &kp N8  &kp N9   &kp SLASH  &kp BACKSPACE
+&kp TAB         &trans            &trans            &trans              &trans                    &trans                &kp DOWN_ARROW   &trans     &kp N4     &kp N5  &kp N6   &kp STAR   &trans
+&kp CAPSLOCK    &trans            &trans            &kp LC(LA(DELETE))  &trans                    &trans                &kp LEFT_ARROW   &trans     &kp N1     &kp N2  &kp N3   &kp MINUS  &trans
+&kp LEFT_SHIFT  &trans            &trans            &trans              &trans                    &trans                &kp RIGHT_ARROW  &trans     &kp COMMA  &kp N0  &kp DOT  &kp PLUS   &kp ENTER
+&trans          &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LALT            &trans                    &kp SPACE             &kp ENTER        &kp SPACE  &trans     &trans  &trans   &kp DEL
             >;
 
             display-name = "LAYER3";
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        layer_4 {
+        layer_5 {
+            display-name = "LAYER0";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC           &kp N1        &kp N2     &kp N3     &kp N4     &kp N5    &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9   &kp N0      &kp BACKSPACE
+&kp TAB           &kp Q         &kp W      &kp E      &kp R      &kp T     &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O    &kp P       &kp BSLH
+&kp LEFT_SHIFT    &kp A         &kp S      &kp D      &kp F      &kp G     &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
+&kp LEFT_CONTROL  &kp Z         &kp X      &kp C      &kp V      &kp B     &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
+&kp C_MUTE        &kp LEFT_ALT  &kp SPACE  &kp SPACE  &kp SPACE  &kp H     &kp ENTER        &kp SPACE  &kp ENTER  &trans     &trans   &kp DELETE
             >;
 
-            display-name = "LAYER4";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
     };
 };
