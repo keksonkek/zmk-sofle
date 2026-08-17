@@ -93,7 +93,7 @@
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
-            display-name = "default_layer";
+            display-name = "default";
         };
 
         layer_1 {
@@ -118,7 +118,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
-            display-name = "lauer_2";
+            display-name = "layer_2";
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
