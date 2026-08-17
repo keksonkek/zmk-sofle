@@ -292,8 +292,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-default_layer">
-<text x="0" y="28" class="label" id="default_layer">default_layer:</text>
+<g transform="translate(40, 0)" class="layer-default">
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -620,8 +620,8 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#lauer_2">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">lauer_2</tspan></text>
+<a href="#layer_2">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">layer_2</tspan></text>
 </a></g>
 <g transform="translate(728, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1005,8 +1005,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-lauer_2">
-<text x="0" y="28" class="label" id="lauer_2">lauer_2:</text>
+<g transform="translate(40, 776)" class="layer-layer_2">
+<text x="0" y="28" class="label" id="layer_2">layer_2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
